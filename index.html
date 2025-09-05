@@ -18,13 +18,13 @@
           <form id="myForm">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre Analista</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" required pattern="[AZazÁÉÍÓÚáéíóúÑñs.]" 
+              <input type="text" class="form-control" id="nombre" name="nombre" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ.\s]+$" 
               placeholder="Digite su nombre. Por favor, no insertar caracteres espciales">
             </div>
 
             <div class="mb-3">
               <label for="any" class="form-label">Tienda</label>
-              <input type="text" class="form-control" id="dato" name="dato" required pattern="[AZazÁÉÍÓÚáéíóúÑñs.]" 
+              <input type="text" class="form-control" id="dato" name="dato" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ.\s]+$" 
               placeholder="Digite el nombre de la Tienda. Por favor, no insertar caracteres espciales">
             </div>
             
@@ -90,6 +90,7 @@
 
 </body>
 </html>
+
 
 
 
