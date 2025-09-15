@@ -19,13 +19,21 @@
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre Analista</label>
               <input type="text" class="form-control" id="nombre" name="nombre" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ.\s]+$" 
-              placeholder="Digite su nombre. Por favor, no insertar caracteres especiales">
+              placeholder="Digite su nombre. Por favor, no insertar caracteres espciales">
             </div>
 
             <div class="mb-3">
               <label for="any" class="form-label">Tienda</label>
-              <input type="text" class="form-control" id="dato" name="dato" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ.\s]+$" 
-              placeholder="Digite el nombre de la Tienda. Por favor, no insertar caracteres especiales">
+              <input type="text" class="form-control" id="dato" name="dato" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ.\s1234567890]+$" 
+              placeholder="Digite el nombre de la Tienda. Por favor, no insertar caracteres espciales">
+            </div>
+
+            <div class="mb-3">
+              <label for="tipo" class="form-label">Seleccione Ingreso o Salida</label>
+                <select id="tipo" class="form-select" name="tipo" required>
+                  <option value="Ingreso">Ingreso</option>
+                  <option value="Salida">Salida</option>
+                </select>
             </div>
             
             <button type="submit" class="btn btn-light w-100" style="background: #6f42c1; color: white;" 
@@ -45,7 +53,7 @@
    <div class="row justify-content-center">
      <div class="col"></div>
      <div class="col col-md-3">
-        <img src="Asset-1@4x-4.png" alt="" style="width: 100%;">
+        <img src="/Asset-1@4x-4.png" alt="" style="width: 100%;">
      </div>     
      <div class="col"></div>
    </div>
@@ -58,7 +66,7 @@
 
 <script>
   // ⚠️ REEMPLAZA ESTA URL por la de tu Apps Script publicado
-  const scriptURL = "https://script.google.com/macros/s/AKfycbxDPPRMfPp4AvnnvLcQWnlX4ACcu2ZehyKal7kpOv7l8m0Tbdl0kW-y6Qmagyx6pfYSxg/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbz7utBbLs6wWxSlCI3OjVlTEUCOk7rWTbWygqpLDw4iG4ysMn4FCTb4X_v6Pi2WAWwJQA/exec";
 
   document.getElementById("myForm").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -90,5 +98,3 @@
 
 </body>
 </html>
-
-
